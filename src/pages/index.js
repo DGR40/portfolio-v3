@@ -6,22 +6,28 @@ import Swing2 from "../images/swing3.png";
 import BarChartVid from "../images/data-vis-1.mp4";
 import TextAnalysis from "../images/text-analysis-1.png";
 import HomeDesign from "../images/home-design.png";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../components/layout.css";
 import NavBar from "../components/navbar";
 import SideBar from "../components/sidebar";
-import "../components/layout.js";
+import { Script } from "gatsby";
 
 export default function Root() {
+  useEffect(() => {
+    // call api or anything
+    console.log("loaded");
+  });
+
   return (
     <>
+      <Script src="../components/layout.js" />
       <div>
         <NavBar />
         <SideBar />
         <section class="typewriter banner" id="home">
           <div class="container">
             <div class="tagline">
-              <h1 onClick={sanityCheck()}>
+              <h1>
                 Hello, my name is <span class="blue">Danny Rusk</span>{" "}
               </h1>
               <p>
@@ -30,11 +36,8 @@ export default function Root() {
                 web apps and data visualizations that provide great
                 <span class="blue"> user experiences</span>.
               </p>
-              <div
-                class="project-button"
-                onClick={() => goToDiv("project-section")}
-              >
-                <h4>My Projects</h4>
+              <div class="project-button" id="goToProject">
+                <h4 onClick={() => goToDiv("project-section")}>My Projects</h4>
               </div>
             </div>
             <div class="tagline-right">
