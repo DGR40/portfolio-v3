@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdanny_rusk_portfolio=self.webpackChunkdanny_rusk_portfolio||[]).push([[678],{6558:function(e,n,t){t.r(n),t.d(n,{Head:function(){return a}});var l=t(7294);n.default=()=>l.createElement("main",null,l.createElement("h1",null,"danny"));const a=()=>l.createElement("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-index-js-cff1e1ef690bb9cdf3b7.js.map
