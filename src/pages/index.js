@@ -288,6 +288,7 @@ function goToDiv(divID) {
   elem.scrollIntoView({
     behavior: "smooth",
   });
+  console.log("here");
 }
 
 /*
