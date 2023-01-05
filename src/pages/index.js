@@ -126,7 +126,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main>
-      <h1>danny</h1>
+      <h1>danny update</h1>
     </main>
   );
 };
