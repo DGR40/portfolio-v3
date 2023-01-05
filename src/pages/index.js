@@ -10,6 +10,7 @@ import React from "react";
 import "../components/layout.css";
 import NavBar from "../components/navbar";
 import SideBar from "../components/sidebar";
+import "../components/layout.js";
 
 export default function Root() {
   return (
@@ -20,7 +21,7 @@ export default function Root() {
         <section class="typewriter banner" id="home">
           <div class="container">
             <div class="tagline">
-              <h1>
+              <h1 onClick={sanityCheck()}>
                 Hello, my name is <span class="blue">Danny Rusk</span>{" "}
               </h1>
               <p>
