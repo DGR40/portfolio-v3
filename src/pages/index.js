@@ -8,11 +8,13 @@ import TextAnalysis from "../images/text-analysis-1.png";
 import HomeDesign from "../images/home-design.png";
 import React from "react";
 import "../components/layout.css";
+import NavBar from "../components/navbar";
 
 export default function Root() {
   return (
     <>
       <div>
+        <NavBar />
         <section class="typewriter banner" id="home">
           <div class="container">
             <div class="tagline">
