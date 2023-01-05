@@ -1,20 +1,13 @@
-import { NavLink } from "react-router-dom";
-import GitIcon from "../assets/github-icon.png";
-import LinkedIcon from "../assets/linkedin-icon.png";
-import ResumeIcon from "../assets/resume-icon.png";
-import emailIcon from "../assets/email-icon.png";
-import arrowIcon from "../assets/arrow-icon.png";
-import appDesign1 from "../assets/vueggie-1.png";
-import appDesign2 from "../assets/vueggie-2.png";
-import NavBar from "../components/navbar";
-import SideBar from "../components/sidebar";
-import MeOnBoat from "../assets/meonboat2.png";
-import Project from "../components/project";
-import Swing1 from "../assets/swing2.png";
-import Swing2 from "../assets/swing3.png";
-import BarChartVid from "../assets/data-vis-1.mp4";
-import TextAnalysis from "../assets/text-analysis-1.png";
-import HomeDesign from "../assets/home-design.png";
+import appDesign1 from "../images/vueggie-1.png";
+import appDesign2 from "../images/vueggie-2.png";
+import MeOnBoat from "../images/meonboat2.png";
+import Swing1 from "../images/swing2.png";
+import Swing2 from "../images/swing3.png";
+import BarChartVid from "../images/data-vis-1.mp4";
+import TextAnalysis from "../images/text-analysis-1.png";
+import HomeDesign from "../images/home-design.png";
+import React from "react";
+import "../components/layout.css";
 
 export default function Root() {
   return (
@@ -254,7 +247,11 @@ export default function Root() {
               </div>
               <div
                 class="project-button"
-                onClick={() => goToURL("src/assets/text-analysis.pdf")}
+                onClick={() =>
+                  goToURL(
+                    "https://dgr40.github.io/portfolio-v3/images/text-analysis.pdf"
+                  )
+                }
               >
                 <h4>Read Full Paper</h4>
               </div>
@@ -268,12 +265,6 @@ export default function Root() {
       </div>
     </>
   );
-}
-
-function scrollToProjects() {
-  var target = $(window).height();
-  console.log(target);
-  $("html, body").animate({ scrollTop: target }, 1000);
 }
 
 function goToURL(url) {
